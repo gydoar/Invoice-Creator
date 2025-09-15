@@ -1,0 +1,49 @@
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Plus } from "lucide-react";
+
+import InvoiceItem from "@/components/invoice-item";
+
+export const items = [
+    {
+        id: "1",
+        description: "SEO Consulting",
+        quantity: 2,
+        rate: 500,
+        amount:700,
+    },
+     {
+        id: "2",
+        description: "Transportation (12 Months)",
+        quantity: 3,
+        rate: 500,
+        amount:1500,
+    },
+];
+
+export default function ItemsList() {
+    const addItem = () => {};
+    return <Card>
+            <CardHeader className="flex flex-row items-center justify-between">
+                <CardTitle>Invoice Items</CardTitle>
+                <Button onClick={addItem} size="sm">
+                    <Plus className="w-4 h-4 mr-2"/>
+                    Add Item
+                </Button>
+            </CardHeader>
+            <CardContent className="space-y-4">
+                {items.map((item, index) => (
+                    <InvoiceItem 
+                    key={item.id}
+                    item={item}
+                    index={index}
+                    canRemove={items.length > 1}/>
+                ))}
+            </CardContent>
+    </Card>
+}
