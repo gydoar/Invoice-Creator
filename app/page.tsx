@@ -4,6 +4,7 @@ import InvoicePreview from "@/components/invoice-preview";
 import InvoiceForm from "@/components/invoice-form";
 import { Button } from "@/components/ui/button"
 import { Eye } from "lucide-react";
+import { Footer } from "@/components/footer";
 
 import { useState } from "react";
 
@@ -11,7 +12,7 @@ export default function Home() {
   const [showPreview, setShowPreview] = useState(false);  
 
   if(showPreview){
-    return <InvoicePreview/>;
+    return <InvoicePreview onBack={() => setShowPreview(false)}/>;
   }
 
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         </div>
         <InvoiceForm />
       </div>
+      <Footer/>
     </div>
   );
 }

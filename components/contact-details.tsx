@@ -7,8 +7,11 @@ import {
 
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
+import { useInvoice } from "@/context/invoice-context";
 
 export default function ContactDetails() {
+  const { invoice, updateInvoice } = useInvoice ();
+  console.log(invoice)
   return (
     <Card>
       <CardHeader>
@@ -19,22 +22,38 @@ export default function ContactDetails() {
         <h3 className="font-medium">From (Your Details)</h3>
         <div>
             <Label htmlFor="fromName">Name</Label>
-            <Input id="fromName" placeholder="Your name or company"/>
+            <Input 
+            id="fromName" 
+            value={invoice.fromName}
+            onChange={(e) => updateInvoice({ fromName: e.target.value})}
+            placeholder="Your name or company"/>
         </div>
         <div>
             <Label htmlFor="fromEmail">Email</Label>
-            <Input id="fromEmail" placeholder="your@email.com" type="email"/>
+            <Input 
+            id="fromEmail" 
+            value={invoice.fromEmail}
+            onChange={(e) => updateInvoice({ fromEmail: e.target.value})}
+            placeholder="your@email.com" type="email"/>
         </div>
        </div>
        <div className="space-y-4">
         <h3 className="font-medium">To (Client Details)</h3>
         <div>
             <Label htmlFor="toName">Name</Label>
-            <Input id="toName" placeholder="Client name or company"/>
+            <Input 
+            id="toName" 
+            value={invoice.toName}
+            onChange={(e) => updateInvoice({ toName: e.target.value})}
+            placeholder="Client name or company"/>
         </div>
          <div>
             <Label htmlFor="toEmail">Email</Label>
-            <Input id="toEmail" placeholder="client@email.com" type="email"/>
+            <Input 
+            id="toEmail" 
+            value={invoice.toEmail}
+            onChange={(e) => updateInvoice({ toEmail: e.target.value})}
+            placeholder="client@email.com" type="email"/>
         </div>
        </div>
       </CardContent>
