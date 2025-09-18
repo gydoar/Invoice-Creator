@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/gydoar/Invoice-Creator/main/docs/gtmetrix.png)
+![](https://raw.githubusercontent.com/gydoar/Invoice-Creator/main/docs/banner.png)
 
 # Invoice Creator
 
