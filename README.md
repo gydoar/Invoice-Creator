@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/gydoar/Invoice-Creator/main/docs/banner.png)
+![https://invoice.wp-nextjs.com/](https://raw.githubusercontent.com/gydoar/Invoice-Creator/main/docs/banner.png)
 
 # Invoice Creator
 
