@@ -57,7 +57,7 @@ export default function TaxAndTotals() {
                     <span>${invoice.taxAmount.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between font-bold text-lg border-t pt-2">
-                    <span>Ttal:</span>
+                    <span>Total:</span>
                     <span>${invoice.total.toFixed(2)}</span>
                 </div>
             </div>
