@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Invoice Creator v0.1",
   description: "Create professional invoices",
+  openGraph: {
+    images: '/og-image.png',
+  },
 };
 
 export default function RootLayout({

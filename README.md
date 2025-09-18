@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Invoice Creator
 
-## Getting Started
+Invoice Creator es una aplicación web para generar facturas profesionales de manera rápida y sencilla.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Demostración en vivo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Invoice Creator](https://invoice.wp-nextjs.com/)  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Características principales
 
-## Learn More
+- Crear facturas con datos personalizados (“From” / “To”)
+- Añadir múltiples ítems/facturas con descripción, cantidad y tarifa
+- Vista previa del total, subtotal e impuestos calculados automáticamente
+- Ajuste de tasa de impuesto (porcentaje configurable)
+- Interfaz limpia, simple y fácil de usar
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Tecnologías usadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js** (versión 15) para el frontend y servidor (SSR/SSG si aplica)  
+- HTML / CSS / JavaScript / React  
+- (Agregar otras tecnologías relevantes, por ejemplo: gestión de estado, librerías UI, etc.)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏗️ Cómo instalar y ejecutar localmente
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Estos pasos te permitirán tener una copia en tu máquina para desarrollo.
+
+1. Clonar el repositorio  
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   cd <NOMBRE_DEL_REPOSITORIO>
